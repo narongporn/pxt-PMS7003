@@ -27,7 +27,7 @@ namespace PMS7003 {
      * Calculate Checksum and return true if data is valid
      */
     //% block="Checksum OK?"
-    export function CalcChecksum (num: number) {
+    export function CalcChecksum (num: number): boolean {
 	let temp = 0
         for (let index = 0; index <= 29; index++) {
         temp += bufr[index]
