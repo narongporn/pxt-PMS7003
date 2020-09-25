@@ -1,16 +1,17 @@
+## PMS7003
+This is an extension for PM2.5 Dust sensor PMS-7003
 
-> Open this page at [https://narongporn.github.io/pxt-pms7003/](https://narongporn.github.io/pxt-pms7003/)
+## Author
+Narongporn Laosrisin
+https://www.facebook.com/narongporn.lao
 
 ## Use as Extension
-
-This repository can be added as an **extension** in MakeCode.
-
 * open [https://makecode.microbit.org/](https://makecode.microbit.org/)
 * click on **New Project**
 * click on **Extensions** under the gearwheel menu
 * search for **https://github.com/narongporn/pxt-pms7003** and import
 
-## Blocks preview
+## Description
 
 This image shows the blocks code from the last commit in master.
 This image may take a few minutes to refresh.
