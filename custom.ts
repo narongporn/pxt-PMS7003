@@ -62,7 +62,11 @@ namespace PMS7003 {
 let bufr = pins.createBuffer(32);
 
 function Calc16bitNumber (num: number) {
-    return bufr[num] * 256 + bufr[num + 1];
+    return NumberTostring(bufr[num] * 256 + bufr[num + 1],4);
 }
 
+function NumberTostring (number: number, length: number) {
+    return ("" + number + "         ").substr(0, length)
+}
+	
 }
