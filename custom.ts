@@ -18,6 +18,14 @@ namespace PMS7003 {
     /**
      * Read data from sensor and save to buffer
      */
+    //% block="Start Character"
+    export function StartCharacter () {
+        return "BM";
+    }
+
+    /**
+     * Read data from sensor and save to buffer
+     */
     //% block="Read Data"
     export function ReadData (): void {
         bufr = serial.readBuffer(32)
