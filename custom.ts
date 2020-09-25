@@ -40,7 +40,7 @@ namespace PMS7003 {
      */
     //% block="PM1"
     export function DataPM1 () {
-	return Calc16bitNumber(10);
+	return NumberTostring(Calc16bitNumber(10),4);
 }
 
     /**
@@ -48,7 +48,7 @@ namespace PMS7003 {
      */
     //% block="PM2.5"
     export function DataPM25 () {
-	return Calc16bitNumber(12);
+	return NumberTostring(Calc16bitNumber(12),4);
 }
 
     /**
@@ -56,13 +56,13 @@ namespace PMS7003 {
      */
     //% block="PM10"
     export function DataPM10 () {
-	return Calc16bitNumber(14);
+	return NumberTostring(Calc16bitNumber(14),4);
 }
 
 let bufr = pins.createBuffer(32);
 
 function Calc16bitNumber (num: number) {
-    return NumberTostring(bufr[num] * 256 + bufr[num + 1],4);
+    return bufr[num] * 256 + bufr[num + 1];
 }
 
 function NumberTostring (number: number, length: number) {
