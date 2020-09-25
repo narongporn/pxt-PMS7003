@@ -31,8 +31,12 @@ namespace PMS7003 {
 	let temp = 0
         for (let index = 0; index <= 29; index++) {
         temp += bufr[index]
+    	}
+	if temp == Calc16bitNumber(30){
+    	return true;
+    } else {
+    	return false;
     }
-    return (temp == Calc16bitNumber(30));
 }
 
     /**
