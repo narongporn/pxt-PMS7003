@@ -14,7 +14,8 @@ https://www.facebook.com/narongporn.lao
 * search for **https://github.com/narongporn/pxt-pms7003** and import
 
 ## Description
-!(https://github.com/narongporn/pxt-PMS7003/blob/master/images/PMS7003-1.png)
+![connect](https://github.com/narongporn/pxt-PMS7003/blob/master/images/PMS7003-1.png)
+
 Use this block to define which pins are connect to RX and TX of the sensor.
 
 !(https://github.com/narongporn/pxt-PMS7003/blob/master/images/PMS7003-2.png)
