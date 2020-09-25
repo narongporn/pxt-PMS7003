@@ -4,7 +4,7 @@ namespace PMS7003 {
      * Declare buffer and set RX, TX pin
      */
     //% weight=100
-    //% block="Connect Sensor to RX %rxpin| TX %txpin"
+    //% block="connect sensor to RX %rxpin| TX %txpin"
     //% inlineInputMode=inline
     export function ConnectSensor(rxpin: SerialPin, txpin: SerialPin): void {
         serial.redirect(
@@ -17,7 +17,7 @@ namespace PMS7003 {
      * Read data from sensor and save to buffer
      */
     //% weight=90
-    //% block="Start Character"
+    //% block="start character"
     export function StartCharacter () {
         return "BM";
     }
@@ -26,7 +26,7 @@ namespace PMS7003 {
      * Read data from sensor and save to buffer
      */
     //% weight=80
-    //% block="Read Data"
+    //% block="read data"
     export function ReadData (): void {
         bufr = serial.readBuffer(32)
     }
@@ -35,7 +35,7 @@ namespace PMS7003 {
      * Calculate Checksum and return true if data is valid
      */
     //% weight=70
-    //% block="Checksum OK?"
+    //% block="checksum OK?"
     export function CalcChecksum (): boolean {
 	let temp = 0
         for (let index = 0; index <= 29; index++) {
@@ -56,7 +56,8 @@ namespace PMS7003 {
     /**
      * Read PM1 data
      */
-    //% block="PM1"
+    //% weight=50
+    //% block="PM 1"
     export function DataPM1 () {
 	return Calc16bitNumber(10);
 }
@@ -64,7 +65,8 @@ namespace PMS7003 {
     /**
      * Read PM2.5 data
      */
-    //% block="PM2.5"
+    //% weight=40
+    //% block="PM 2.5"
     export function DataPM25 () {
 	return Calc16bitNumber(12);
 }
@@ -72,7 +74,8 @@ namespace PMS7003 {
     /**
      * Read PM10 data
      */
-    //% block="PM10"
+    //% weight=30
+    //% block="PM 10"
     export function DataPM10 () {
 	return Calc16bitNumber(14);
 }
