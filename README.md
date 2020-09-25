@@ -16,7 +16,7 @@ https://www.facebook.com/narongporn.lao
 This image shows the blocks code from the last commit in master.
 This image may take a few minutes to refresh.
 
-![A rendered view of the blocks](https://github.com/narongporn/pxt-pms7003/raw/master/.github/makecode/blocks.png)
+![A rendered view of the blocks](https://github.com/narongporn/pxt-PMS7003/blob/master/images/PMS7003.png)
 
 #### Metadata (used for search, rendering)
 
