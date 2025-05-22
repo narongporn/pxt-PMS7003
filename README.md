@@ -16,7 +16,7 @@ https://www.facebook.com/narongporn.lao
 ## Description
 ![connect](https://github.com/narongporn/pxt-PMS7003/blob/master/images/PMS7003-1.png)
 
-Use this block to define which pins are connect to RX and TX of the sensor.
+Use this block to define which pins are connected to RX and TX of the sensor.
 
 
 ![start character](https://github.com/narongporn/pxt-PMS7003/blob/master/images/PMS7003-2.png)
@@ -26,7 +26,7 @@ Use start character in serial on data received to detect start character sending
 
 ![read data](https://github.com/narongporn/pxt-PMS7003/blob/master/images/PMS7003-3.png)
 
-Use read data to read sensor data into buffer.
+Use read data to read 32-byte of sensor data into buffer.
 
 
 ![checksum ok?](https://github.com/narongporn/pxt-PMS7003/blob/master/images/PMS7003-4.png)
