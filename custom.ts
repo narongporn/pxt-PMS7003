@@ -4,7 +4,7 @@ namespace PMS7003 {
      * Declare buffer and set RX, TX pin
      */
     //% weight=100
-    //% block="connect sensor to RX %rxpin| TX %txpin"
+    //% block="connect sensor RX to %rxpin| TX to %txpin"
     //% inlineInputMode=inline
     export function ConnectSensor(rxpin: SerialPin, txpin: SerialPin): void {
         serial.redirect(
