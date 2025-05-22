@@ -11,6 +11,7 @@ namespace PMS7003 {
             rxpin,
             txpin,
             BaudRate.BaudRate9600)
+	serial.setRxBufferSize(32)
     }
 
     /**
@@ -38,10 +39,12 @@ namespace PMS7003 {
     //% block="checksum OK?"
     export function CalcChecksum (): boolean {
 	let temp = 0
-        for (let index = 0; index <= 29; index++) {
-        temp += bufr[index]
+	if (bufr[0] == 66 && bufr[1] == 77) {
+    		for (let index = 0; index <= 29; index++) {
+        		temp += bufr[index]
+    		}
     	}
-	return temp == Calc16bitNumber(30);
+        return temp == Calc16bitNumber(30);
 }
 
     /**
